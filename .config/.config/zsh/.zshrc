@@ -4,10 +4,10 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # MATLAB
-#export _JAVA_AWT_WM_NONREPARENTING=1
+export _JAVA_AWT_WM_NONREPARENTING=1
 
 #latex
-#export PATH=/opt/texlive/2021/bin/x86_64-linux/:$PATH
+export PATH=/opt/texlive/2021/bin/x86_64-linux/:$PATH
 
 # Path to your oh-my-zsh installation.
 #export ZSH="/home/$USER/.oh-my-zsh"
@@ -21,6 +21,11 @@ export PATH=/home/$USER/.local/share/Steam/steamapps/common/Proton\ -\ Experimen
 
 #davinci resolve
 export PATH=/opt/resolve/bin:$PATH
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 
 # go
 export GOPATH=$HOME/go
@@ -202,6 +207,9 @@ HISTFILE=~/.cache/zsh/history
 alias vi="nvim"
 alias vim="nvim"
 alias l="ls -lha"
+
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 xset s off -dpms
 
