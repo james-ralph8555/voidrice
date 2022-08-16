@@ -41,7 +41,7 @@ export GOPATH=$HOME/go
 
 # Enable colors and change prompt:
 autoload -U colors && colors	# Load colors
-PS1="%B%{$fg[red]%}%n%{$fg[red]%}@%{$fg[red]%}%M%{$fg[red]%}%~%{$reset_color%}%b "
+PS1="%B%{$fg[white]%}%n%{$fg[white]%}@%{$fg[white]%}%M%{$fg[white]%}%~%{$reset_color%}%b "
 setopt autocd		# Automatically cd into typed directory.
 stty stop undef		# Disable ctrl-s to freeze terminal.
 setopt interactive_comments
